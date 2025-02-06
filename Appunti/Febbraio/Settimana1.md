@@ -58,14 +58,34 @@ Continuo unit testing RazzaService
 ### Ricerche mie
 - Altri tag di testing, trovato [Theory], esegue più volte il test con questo tag in base a quanti [InlineData()] sono inseriti nei tag del metodo
 - [InlineData()] i dati forninti manualmente per le molteplici esecuzioni del metodo con tag [Theory]
+- Varianti di [InlineData()] sono [MemberData()] può essere usato per chiamare delle funzioni di supporto che generano dati
+
 
 ## Done
 ### Unit testing
 - Implementazione completata di metodi: Find, Count, Delete
 - Finito unit testing RazzaService
+- Divisione service: allevamento, veterinario, cattleTrack, email, stalla, Utenti 
+<br>
+<br>
+<br>
+<br>
 
 
-<br>
-<br>
-<br>
-<br>
+# 06/02
+## Spiegazioni
+### Entity FW 
+EF funziona a pattern, usati come base per operazioni ripetitive, se nel interagire con il db un operazione non va a buon fine, 
+rimane nella memoria de codice, se ciò accade verrà ritentata quando si chiama un altra operazione, quindi va rimossa tale operazione dalla memoria,
+ES con uso di: _dbContext.ChangeTracker.Clear();
+
+## Done
+### Unit Testing
+- Code cleaning in test
+- Fix NotInsert, NotUpdate, NotDelete
+- add static usage not working
+
+## To Do
+### Unit Testing
+- Fix NotDelete/NotUpdate
+- Fix usage of static list
