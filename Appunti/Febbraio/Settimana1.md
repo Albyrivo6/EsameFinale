@@ -89,3 +89,10 @@ ES con uso di: _dbContext.ChangeTracker.Clear();
 ### Unit Testing
 - Fix NotDelete/NotUpdate
 - Fix usage of static list
+
+# 07/02
+## Spiegazioni
+### Mock (Moq)
+- Per fare test ad-hoc
+- Context del mock si collega al service vero
+- fa credere al service di avere un vero db collegato, ma non esiste
