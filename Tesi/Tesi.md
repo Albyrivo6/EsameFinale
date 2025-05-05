@@ -1,1 +1,0 @@
--![Intestazione Tesi](RIVOIRA ALBERTO VerticaleMD.md)
